@@ -25,6 +25,7 @@ const joinPagesUsingPageBuilder = require('./BasicUsage/MultipleDocumentOperatio
 // Merge
 const mergePdf = require('./BasicUsage/MultipleDocumentOperations/Merge/mergePdf')
 const mergeDocx = require('./BasicUsage/MultipleDocumentOperations/Merge/mergeDocx')
+const mergeWordDocumentsWithPredefinedComplianceMode = require('./BasicUsage/MultipleDocumentOperations/Merge/Word/mergeWordDocumentsWithPredefinedComplianceMode')
 const mergeXlsx = require('./BasicUsage/MultipleDocumentOperations/Merge/mergeXlsx')
 const mergeOne = require('./BasicUsage/MultipleDocumentOperations/Merge/mergeOne')
 const mergeTxt = require('./BasicUsage/MultipleDocumentOperations/Merge/mergeTxt')
@@ -266,6 +267,10 @@ class MergerExamples {
 
     async mergeDocx(inputFilePath = '') {
         return mergeDocx(this, inputFilePath || this.inputFiles.sampleDocx)
+    }
+
+    async mergeWordDocumentsWithPredefinedComplianceMode(inputFilePath = '') {
+        return mergeWordDocumentsWithPredefinedComplianceMode(this, inputFilePath || this.inputFiles.sampleDocx)
     }
 
     async mergeXlsx(inputFilePath = '') {

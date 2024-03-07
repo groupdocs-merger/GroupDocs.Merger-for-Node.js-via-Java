@@ -1,11 +1,9 @@
 # Document Merger API for Node.js
 
-GroupDocs.Merger for-Node.js-via-Java is a [Document Merger API](https://products.groupdocs.com/merger/java) for Java developers. It supports over 60 document types from popular categories such as PDF, Microsoft Office, OpenOffice, Visio, images, audio, archives etc.
-
-It allows developers to merge several documents into one, split single document to multiple documents, reorder or replace document pages, change page orientation, manage document protection, render documents as images and more.
+GroupDocs.Merger for Node.js via Java is a powerful API to merge several documents into one, split single document to multiple documents, reorder or replace document pages, change page orientation, manage document protection, render documents as images and more.
 
 <p align="center">
-  <a title="Download complete GroupDocs.Merger for Java source code" href="https://github.com/groupdocs-merger/GroupDocs.Merger-for-Java/archive/master.zip"> 
+  <a title="Download GitHub examples of GroupDocs.Merger for Node.js via Java source code" href="https://github.com/groupdocs-merger/GroupDocs.Merger-for-Node.js-via-Java/archive/master.zip"> 
     <img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
@@ -32,11 +30,6 @@ Directory | Description
 Merge documents of the [most popular file formats](https://docs.groupdocs.com/merger/nodejs-java/supported-document-formats/) (PDF, DOCX, XLSX, PPTX, JPG, ZIP and more) into single resultant document.
 
 ## Get Started with GroupDocs.Merger-for-Node.js-via-Java
-
-GroupDocs.Merger-for-Node.js-via-Java requires J2SE 7.0 (1.7), J2SE 8.0 (1.8) or above. Please install Java first if you do not have it already.
-
-GroupDocs hosts all Java APIs on [GroupDocs Artifact Repository](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-merger/), so simply [configure](https://docs.groupdocs.com/merger/java/installation/) your Maven project to fetch the dependencies automatically.
-
 ### Installation
 
 From the command line:
@@ -54,27 +47,31 @@ Run runExamles.js:
 	node runExamples.js
 
 
-## Merge PDF using Node.js
+## Merge DOCX using Node.js
 
 ```js
-// Load the source PDF file
-const merger = new groupdocs.merger.Merger("sample1.pdf");
+// Load the source DOCX file
+const merger = new groupdocs.merger.Merger("sample1.docx");
 
-//  Add another PDF file to merge
-merger.join("sample2.pdf");
+//  Add another DOCX file to merge
+merger.join("sample2.docx");
 
-// Merge PDF files and save result
-merger.save("merged.pdf");
+// Merge DOCX files and save result
+merger.save("merged.docx");
 ```
 
-### Load password protected DOCX via Node.js
+## Join Specific Pages from DOCX via Node.js
 
 ```js
-// Load the password protected DOCX file
-const loadOptions = new groupdocs.merger.LoadOptions("123");
-const merger = new groupdocs.merger.Merger("sample.docx", loadOptions);
+// Load the source DOCX file
+const merger = new groupdocs.merger.Merger("sample.docx");
 
-// Save the password protected DOCX result
+const pageJoinOptions1 = new groupdocs.merger.PageJoinOptions(7, 8)
+merger.join("sample2.docx", pageJoinOptions1)
+const pageJoinOptions2 = new groupdocs.merger.PageJoinOptions(9, 10)
+merger.join("sample3.docx", pageJoinOptions2)
+
+// Merge DOCX files and save result
 merger.save("merged.docx");
 ```
 

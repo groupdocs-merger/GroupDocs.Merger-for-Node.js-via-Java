@@ -33,6 +33,8 @@ const examples = require('./mergerExamples')
                 examples.mergeHtml(),
                 examples.mergeZip(),
                 examples.mergeJpg(),
+                // Word
+                examples.mergeWordDocumentsWithPredefinedComplianceMode(),
                 // Security Operations
                 examples.addDocumentPassword(),
                 examples.checkDocumentPasswordProtection(),

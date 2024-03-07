@@ -1,6 +1,6 @@
 {
   "name": "groupdocs.merger-for-node.js-via-java",
-  "version": "24.2.0",
+  "version": "24.12.0",
   "description": "GroupDocs.Merger for Node.js via Java examples, plugins and showcase projects",
   "main": "runExamples.js",
   "directories": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/groupdocs-merger/GroupDocs.Merger-for-Node.js-via-Java#readme",
   "dependencies": {
-    "@groupdocs/groupdocs.merger": "^24.2.0",
+    "@groupdocs/groupdocs.merger": "^24.12.0",
     "dotenv": "^16.4.5"
   }
 }
