@@ -1,5 +1,5 @@
 /*
- * This example demonstrates how to move page from the docx file.
+ * This example demonstrates how to move page from the pptx file.
  */
 async function movePage(groupdocs, inputFilePath) {
     const merger = new groupdocs.merger.Merger(inputFilePath)
