@@ -3,13 +3,14 @@
 GroupDocs.Merger for Node.js via Java is a powerful API to merge several documents into one, split single document to multiple documents, reorder or replace document pages, change page orientation, manage document protection, render documents as images and more.
 
 <p align="center">
-  <a title="Download GitHub examples of GroupDocs.Merger for Node.js via Java source code" href="https://github.com/groupdocs-merger/GroupDocs.Merger-for-Node.js-via-Java/archive/master.zip"> 
+  <a title="Download GitHub examples of GroupDocs.Merger examples, plugins and showcase projects for Node.js via Java" href="https://github.com/groupdocs-merger/GroupDocs.Merger-for-Node.js-via-Java/archive/master.zip"> 
     <img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
 Directory | Description
 --------- | -----------
+[Docs](https://docs.groupdocs.com/merger/nodejs-java/)  | Product documentation containing the Developer's Guide, Release Notes and more.
 [Examples](https://github.com/groupdocs-merger/GroupDocs.Merger-for-Node.js-via-Java/tree/master/Examples)  | Node.js examples and sample documents for you to get started quickly.
 
 
